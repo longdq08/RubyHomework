@@ -43,3 +43,4 @@ div.desc {
 
 </body>
 </html>
+<img src="/uploads/pic1.jpg" alt="1">

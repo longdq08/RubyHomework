@@ -72,7 +72,12 @@ end
 
 # show all pictures
 get '/pictures' do
-  @dir = 'public/uploads'
+  @dir = "public/uploads"
+  Dir.foreach("public/uploads") do |picture|
+    if File.file?("public/uploads/#{picture}")
+      puts picture
+    end
+  end
   erb :pictures
 end
 
